@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <div class="playlist">Playing 1 of 4</div>
+            <div class="image"></div>
+            <div class="title">Mây Đêm Chờ Mấy Đêm</div>
+            <div class="artist">Nguyễn Hữu Kha</div>
+        </div>
+
+        <div class="slider-container">
+            <label class="current-time">00:00</label>
+            <input type="range" min="0" max="100" value="0" class="seek-slider">
+            <label class="total-time">00:00</label>
+        </div>
+
+        <div class="slider-container">
+            <div class="volume-down">
+                <i class="fa-solid fa-volume-low"></i>
+            </div>
+                
+            <input type="range" min="0" max="100" value="100" class="volume-slider">
+            <div class="volume-up">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+        </div>
+
+        <div class="buttons">
+
+            <div class="music-btn shuffle-btn">
+                <i class="fa-solid fa-shuffle fa-2x"></i>
+            </div>
+
+            <div class="music-btn backward-btn">
+                <i class="fa-solid fa-backward-step fa-2x"></i>
+            </div>
+
+            <div class="music-btn play-btn">
+                <i class="fa-solid fa-circle-play fa-5x"></i>
+            </div>
+
+            <div class="music-btn forward-btn">
+                <i class="fa-solid fa-forward-step fa-2x"></i>
+            </div>
+
+            <div class="music-btn repeat-btn fa-2x">
+                <i class="fa-solid fa-repeat"></i>
+            </div>
+
+        </div>
+
+        <div class="wave-container">
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+        </div>
+        <!-- <audio src="./musics/chantinh.mp3"></audio> -->
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>

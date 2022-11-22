@@ -1,0 +1,157 @@
+body{
+    height: 95vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(20, 21, 102), rgb(210, 73, 179));
+}
+
+.container{
+    color: whitesmoke;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.5),
+                0 10px 15px rgba(0,0,0,0.2);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.playlist{
+    font-size: 1rem;
+}
+.image{
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./img/maydemchomaydem.jpg');
+    border: 2px solid white;
+    box-shadow: 0 6px 15px #ccc;   
+}
+
+.img-loader{
+    animation: rotate 8s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.title{
+    font-size: 2.5rem;
+}
+.artist{
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+.slider-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seek-slider{
+    width: 60%;
+}
+.volume-slider{
+    width: 30%;
+}
+.seek-slider,.volume-slider{
+    appearance: none;
+    height: 5px;
+    background-color: rgb(74, 171, 224);
+}
+
+.seek-slider::-webkit-slider-thumb,
+.volume-slider::-webkit-slider-thumb{
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(42, 90, 249);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.current-time,.total-time,.volume-down,.volume-up{
+    padding: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.buttons>div>i{
+    cursor: pointer;
+}
+
+.music-btn {
+    padding: 25px;
+    opacity: .8;
+}
+
+.wave-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    height: 70px;
+}
+.stroke{
+    width: 10px;
+    height: 150%;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+    margin: 0 5px;
+    animation: animate 1.4s linear infinite;
+}
+@keyframes animate {
+    50% {
+        background-color: rgb(58, 156, 237);
+        height: 20%;
+    }
+    100%{
+        height: 100%;
+    }
+    
+}
+
+.stroke:nth-child(1){
+    animation-delay: 0;
+}
+.stroke:nth-child(2){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(4){
+    animation-delay: 0.9s;
+}
+.stroke:nth-child(5){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(6){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(7){
+    animation-delay: 0;
+}
+
+
+
